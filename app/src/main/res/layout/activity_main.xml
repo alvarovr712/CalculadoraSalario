@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/background">
+
+    <View
+        android:id="@+id/cabecera"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:background="@color/red"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.05"
+        />
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toTopOf="@+id/cabecera"
+        app:layout_constraintBottom_toBottomOf="@id/cabecera"
+        app:layout_constraintStart_toStartOf="@id/cabecera"
+        app:layout_constraintEnd_toEndOf="@id/cabecera"
+        android:text="@string/calculadora"
+        android:textSize="40sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"/>
+    <!--                           SALARIO BRUTO ANUAL             -->
+    <View
+        android:id="@+id/uno"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/cabecera"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/red"/>
+    <TextView
+        android:id="@+id/SBA"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/uno"
+        app:layout_constraintBottom_toBottomOf="@id/uno"
+        app:layout_constraintStart_toStartOf="@id/uno"
+        app:layout_constraintEnd_toEndOf="@id/uno"
+        android:text="@string/SBA"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/ISBA"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:inputType="date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/uno"
+        app:layout_constraintTop_toBottomOf="@id/cabecera"
+        app:layout_constraintVertical_bias="0.1"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/black"
+        android:hint="@string/introduzca_sba"
+        android:textAlignment="center" />
+    <!--                      NUMERO DE PAGAS                 -->
+
+    <View
+        android:id="@+id/dos"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/uno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/NP"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/dos"
+        app:layout_constraintBottom_toBottomOf="@id/dos"
+        app:layout_constraintStart_toStartOf="@id/dos"
+        app:layout_constraintEnd_toEndOf="@id/dos"
+        android:text="@string/NP"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/INP"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/uno"
+        app:layout_constraintTop_toBottomOf="@id/ISBA"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/black"
+        android:hint="@string/INP"
+        android:textAlignment="center" />
+
+
+
+    <!--                      EDAD                            -->
+
+    <View
+        android:id="@+id/tres"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/dos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/red"/>
+    <TextView
+        android:id="@+id/E"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/tres"
+        app:layout_constraintBottom_toBottomOf="@id/tres"
+        app:layout_constraintStart_toStartOf="@id/tres"
+        app:layout_constraintEnd_toEndOf="@id/tres"
+        android:text="@string/E"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/IE"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/tres"
+        app:layout_constraintTop_toBottomOf="@id/INP"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/black"
+        android:hint="@string/IE"
+        android:textAlignment="center" />
+
+
+    <!--                      GRUPO PROFESIONAL               -->
+    <View
+        android:id="@+id/cuatro"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tres"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/GP"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/cuatro"
+        app:layout_constraintBottom_toBottomOf="@id/cuatro"
+        app:layout_constraintStart_toStartOf="@id/cuatro"
+        app:layout_constraintEnd_toEndOf="@id/cuatro"
+        android:text="@string/GP"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/IGP"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/uno"
+        app:layout_constraintTop_toBottomOf="@id/IE"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/black"
+        android:hint="Grupo Profesional"
+        android:textAlignment="center" />
+    <!--                      GRADO DE DISCAPACIDAD           -->
+
+    <View
+        android:id="@+id/cinco"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/cuatro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/GD"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/cinco"
+        app:layout_constraintBottom_toBottomOf="@id/cinco"
+        app:layout_constraintStart_toStartOf="@id/cinco"
+        app:layout_constraintEnd_toEndOf="@id/cinco"
+        android:text="@string/GD"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/IGD"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/cinco"
+        app:layout_constraintTop_toBottomOf="@id/IGP"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/black"
+        android:hint="Grado discapacidad"
+        android:textAlignment="center" />
+    <!--                      ESTADO CIVIL                    -->
+
+    <View
+        android:id="@+id/seis"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/cinco"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/EC"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/seis"
+        app:layout_constraintBottom_toBottomOf="@id/seis"
+        app:layout_constraintStart_toStartOf="@id/seis"
+        app:layout_constraintEnd_toEndOf="@id/seis"
+        android:text="@string/EC"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+    <EditText
+        android:id="@+id/IEC"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/seis"
+        app:layout_constraintTop_toBottomOf="@id/IGD"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/black"
+        android:hint="@string/IEC"
+        android:textAlignment="center" />
+    <!--                      NUMERO DE HIJOS                 -->
+
+    <View
+        android:id="@+id/siete"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/seis"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.1"
+        android:background="@color/red"/>
+
+    <TextView
+        android:id="@+id/NH"
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/siete"
+        app:layout_constraintBottom_toBottomOf="@id/siete"
+        app:layout_constraintStart_toStartOf="@id/siete"
+        app:layout_constraintEnd_toEndOf="@id/siete"
+        android:text="@string/NH"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        />
+
+    <EditText
+        android:id="@+id/INH"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:background="@color/white"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/siete"
+        app:layout_constraintTop_toBottomOf="@id/IEC"
+        android:layout_marginTop="10dp"
+        app:layout_constraintHorizontal_bias="0.9"
+        android:textColor="@color/black"
+        android:hint="@string/INH"
+        android:textAlignment="center" />
+
+    <!--             BOTÓN                -->
+    <androidx.appcompat.widget.AppCompatButton
+       android:id="@+id/calcularButton"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="@string/calcular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/siete"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

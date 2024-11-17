@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">CalculadoraSalarioNeto</string>
+    <string name="calculadora">Calculadora</string>
+    <string name="SBA">Salario bruto anual</string>
+    <string name="introduzca_sba">Introduzca SBA</string>
+    <string name="NP">Número de Pagas</string>
+    <string name="E">Edad</string>
+    <string name="GP">Grupo profesional</string>
+    <string name="GD">Grado  discapacidad</string>
+    <string name="EC">Estado civil</string>
+    <string name="NH">Número de hijos</string>
+    <string name="INP">Numero de pagas</string>
+    <string name="IE">Edad</string>
+    <string name="IEC">Estado civil</string>
+    <string name="INH">Número de hijos</string>
+    <string name="calcular">Calcular</string>
+</resources>
